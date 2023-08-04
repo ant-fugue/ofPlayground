@@ -1,8 +1,5 @@
 #include "ofApp.h"
 
-#include "Drop.h"
-
-vector<Drop> drops;
 //--------------------------------------------------------------
 void ofApp::setup() {
   ofSetBackgroundColor(230, 230, 250);
