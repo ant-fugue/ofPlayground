@@ -62,6 +62,9 @@ local.properties
 /.idea/workspace.xml
 /.idea/libraries
 
+# Visual Studio Code
+.vscode/browse.db*
+
 ##################
 # operating system
 ##################
