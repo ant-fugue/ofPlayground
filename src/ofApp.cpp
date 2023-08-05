@@ -13,7 +13,12 @@ void ofApp::setup() {
 }
 
 //--------------------------------------------------------------
-void ofApp::update() { s.update(); }
+void ofApp::update() {
+  if (s.eat(f)) {
+    f.pickLocation();
+  }
+  s.update();
+}
 
 //--------------------------------------------------------------
 void ofApp::draw() {
