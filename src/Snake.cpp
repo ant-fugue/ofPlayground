@@ -11,8 +11,8 @@ Snake::Snake() {
 void Snake::setGridSize(int gSize) { gridSize = gSize; }
 
 void Snake::update() {
-  x += xdir;
-  y += ydir;
+  x += xdir * gridSize;
+  y += ydir * gridSize;
 
   x = ofClamp(x, 0, ofGetWidth() - gridSize);
   y = ofClamp(y, 0, ofGetHeight() - gridSize);

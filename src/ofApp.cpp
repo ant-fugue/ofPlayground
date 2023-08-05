@@ -4,6 +4,7 @@ int gridSize = 20;
 
 //--------------------------------------------------------------
 void ofApp::setup() {
+  ofSetFrameRate(10);
   s = Snake();
   s.setGridSize(gridSize);
 }
