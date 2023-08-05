@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Food.h"
 #include "Snake.h"
 #include "ofMain.h"
 
@@ -22,4 +23,5 @@ class ofApp : public ofBaseApp {
   void gotMessage(ofMessage msg);
 
   Snake s;
+  Food f;
 };
