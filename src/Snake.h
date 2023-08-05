@@ -6,7 +6,7 @@ class Snake {
 
   void setGridSize(int gSize);
 
-  void changeDir();
+  void changeDir(int xd, int yd);
   void update();
   void show();
 

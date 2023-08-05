@@ -9,13 +9,26 @@ void ofApp::setup() {
 }
 
 //--------------------------------------------------------------
-void ofApp::update() {}
+void ofApp::update() { s.update(); }
 
 //--------------------------------------------------------------
 void ofApp::draw() { s.show(); }
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key) {}
+void ofApp::keyPressed(int key) {
+  if (key == OF_KEY_UP) {
+    s.changeDir(0, -1);
+  }
+  if (key == OF_KEY_DOWN) {
+    s.changeDir(0, 1);
+  }
+  if (key == OF_KEY_LEFT) {
+    s.changeDir(-1, 0);
+  }
+  if (key == OF_KEY_DOWN) {
+    s.changeDir(0, 1);
+  }
+}
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key) {}
